@@ -19,7 +19,5 @@ export class AppComponent {
   
 }
 
-// $(document).ready(()=> {
-//   alert("asdf")
-// })
+
 
