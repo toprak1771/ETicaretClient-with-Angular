@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { BaseComponent, SpinnerType } from 'src/app/base/base.component';
-import { Book } from 'src/app/contracts/book';
+import { Create_Product } from 'src/app/contracts/Create_Product';
 import { HttpClientService } from 'src/app/services/common/http-client.service';
 
 @Component({
@@ -28,7 +28,7 @@ export class CustomerComponent extends BaseComponent implements OnInit {
     //   publishDate: "2021-11-22T13:36:49.108Z"
     // }).subscribe();
 
-    this.httpClientService.get<Book[]>({
+    this.httpClientService.get<Create_Product[]>({
       controller:"Book"
     }).subscribe(data=>data.forEach(element => {
       console.log(element);

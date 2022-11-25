@@ -1,0 +1,26 @@
+<mat-form-field appearance="fill" class="product-create">
+  <mat-label>Title</mat-label>
+  <input matInput #txtTitle />
+</mat-form-field>
+
+<mat-form-field appearance="fill" class="product-create">
+  <mat-label>Genre Id</mat-label>
+  <input matInput type="number" min="0" placeholder="0"  #txtGenreId />
+</mat-form-field>
+
+<mat-form-field appearance="fill" class="product-create">
+  <mat-label>Author Id</mat-label>
+  <input matInput type="number" min="0" placeholder="0" #txtAuthorId />
+</mat-form-field>
+
+<mat-form-field appearance="fill" class="product-create">
+  <mat-label>Page Count</mat-label>
+  <input matInput type="number" min="0" placeholder="0"  #txtPageCount />
+</mat-form-field>
+
+<mat-form-field appearance="fill" class="product-create">
+    <mat-label>Publish Date</mat-label>
+    <input matInput type="datetime" #txtPublishDate/>
+</mat-form-field>
+
+<button mat-raised-button class="btn" color="primary" (click)="create(txtTitle, txtGenreId, txtAuthorId, txtPageCount, txtPublishDate)">Create Book</button>
